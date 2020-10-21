@@ -1,6 +1,5 @@
 import React, { cloneElement, Children } from 'react';
-import PropTypes, { object } from 'prop-types';
-import { path } from 'ramda';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import ProgressBar from 'components/ProgressBar';
 import PageHeaderHeader from './PageHeaderHeader';
@@ -25,11 +24,11 @@ const defaultProps = {
 
 const augmentChildProps = (children, extraProps) =>
   Children.map(children, (child) => {
-    if (path(['type', 'isPageHeader'], child)) {
+    if (child?.type?.isPageHeader) {
       return cloneElement(
         child,
         extraProps,
-        augmentChildProps(path(['props', 'children'], child), extraProps),
+        augmentChildProps(child?.props?.children, extraProps),
       );
     }
 
@@ -46,7 +45,6 @@ const PageHeader = ({ children, loading, tabs }) => {
         <ProgressBar
           loading={loading}
           className="rc-page-header-progress-bar"
-          key={window.location.pathname}
         />
       </div>
     </>
