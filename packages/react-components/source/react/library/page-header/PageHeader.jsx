@@ -1,7 +1,7 @@
 import React, { cloneElement, Children } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import ProgressBar from 'components/ProgressBar';
+import ProgressBar from './ProgressBar';
 import PageHeaderHeader from './PageHeaderHeader';
 import PageHeaderTitle from './PageHeaderTitle';
 import PageHeaderActions from './PageHeaderActions';

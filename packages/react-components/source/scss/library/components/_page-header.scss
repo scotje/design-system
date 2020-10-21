@@ -155,3 +155,37 @@
     border-top: $puppet-common-border;
   }
 }
+
+.progress-bar {
+  background-color: $puppet-b200;
+  z-index: 1;
+
+  .bar {
+    background-color: $puppet-b600;
+    height: 2px;
+  }
+
+  &.progress-bar-loading {
+    .bar {
+      width: 90%;
+      transition: width $puppet-common-progress-duration
+        $puppet-common-transition-timing;
+    }
+  }
+
+  &.progress-bar-complete {
+    .bar {
+      width: 100%;
+      transition: width $puppet-common-transition-duration
+        $puppet-common-transition-timing;
+    }
+  }
+
+  &.progress-bar-ready {
+    opacity: 0;
+
+    .bar {
+      width: 0;
+    }
+  }
+}
