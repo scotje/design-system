@@ -20,7 +20,11 @@ const PageHeaderMetadata = ({ label, value, loading }) => {
       <Heading as="h5" className="rc-page-header-metadata-label">
         {label}
       </Heading>
-      <Text color="medium" size="medium" className="rc-page-header-metadata-value">
+      <Text
+        color="medium"
+        size="medium"
+        className="rc-page-header-metadata-value"
+      >
         {!loading && value}
       </Text>
     </div>

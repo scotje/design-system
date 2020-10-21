@@ -20,7 +20,9 @@ const PageHeaderExtras = ({ children, loading, className }) => {
   }
 
   return (
-    <div className={classNames('rc-page-header-extras', className)}>{children}</div>
+    <div className={classNames('rc-page-header-extras', className)}>
+      {children}
+    </div>
   );
 };
 
