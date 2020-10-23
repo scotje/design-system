@@ -11,8 +11,8 @@ const defaultProps = {
   loading: false,
 };
 
-const PageHeaderActions = ({ children, loading }) => {
-  return !loading && <div className="rc-page-header-actions">{children}</div>;
+const PageHeaderActions = ({ children, loading, ...props }) => {
+  return !loading && <div className="rc-page-header-actions" {...props}>{children}</div>;
 };
 
 PageHeaderActions.propTypes = propTypes;

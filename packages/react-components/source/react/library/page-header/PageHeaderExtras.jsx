@@ -14,13 +14,13 @@ const defaultProps = {
   className: '',
 };
 
-const PageHeaderExtras = ({ children, loading, className }) => {
+const PageHeaderExtras = ({ children, loading, className, ...props }) => {
   if (loading) {
     return null;
   }
 
   return (
-    <div className={classNames('rc-page-header-extras', className)}>
+    <div className={classNames('rc-page-header-extras', className)} {...props}>
       {children}
     </div>
   );

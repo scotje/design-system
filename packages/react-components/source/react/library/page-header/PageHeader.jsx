@@ -35,11 +35,12 @@ const augmentChildProps = (children, extraProps) =>
     return child;
   });
 
-const PageHeader = ({ children, loading, tabs }) => {
+const PageHeader = ({ children, loading, tabs, ...props }) => {
   return (
     <>
       <div
         className={classNames('rc-page-header', { tabs, 'not-loading': !loading })}
+        {...props}
       >
         {augmentChildProps(children, { loading })}
         <ProgressBar

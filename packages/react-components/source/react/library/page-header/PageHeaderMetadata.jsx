@@ -6,17 +6,19 @@ const propTypes = {
   label: PropTypes.node,
   value: PropTypes.node,
   loading: PropTypes.bool,
+  className: PropTypes.string,
 };
 
 const defaultProps = {
   label: '',
   value: '',
   loading: false,
+  className: '',
 };
 
-const PageHeaderMetadata = ({ label, value, loading }) => {
+const PageHeaderMetadata = ({ label, value, loading, className, ...props }) => {
   return (
-    <div className="rc-page-header-metadata">
+    <div className={`rc-page-header-metadata ${className}`} {...props}>
       <Heading as="h5" className="rc-page-header-metadata-label">
         {label}
       </Heading>

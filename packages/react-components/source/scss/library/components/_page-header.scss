@@ -1,7 +1,6 @@
 @import '~@puppet/sass-variables/index';
 
 .rc-page-header {
-  padding: 0 $puppet-common-spacing-base * 8;
   border-bottom: $puppet-common-border;
   position: relative;
 
@@ -19,7 +18,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 40px;
-  animation: loadedContent $puppet-common-transition-duration forwards;
+  animation: rc-fade-in $puppet-common-transition-duration forwards;
 
   // @media (max-width: 767px) {
   //   flex-direction: column;
@@ -28,7 +27,7 @@
 }
 
 .rc-page-header-actions {
-  animation: loadedContent $puppet-common-transition-duration forwards;
+  animation: rc-fade-in $puppet-common-transition-duration forwards;
   opacity: 0;
   margin-left: $puppet-common-spacing-base * 2;
   display: flex;
@@ -41,7 +40,7 @@
 .rc-page-header-sub-header {
   margin-bottom: $puppet-common-spacing-base * 4;
   min-height: 20px;
-  animation: loadedContent $puppet-common-transition-duration forwards;
+  animation: rc-fade-in $puppet-common-transition-duration forwards;
   opacity: 0;
 }
 
@@ -128,6 +127,7 @@
 }
 
 .rc-page-header-extras {
+  display: flex;
   max-height: 0;
   border-top: 0;
   animation: expandExtras ($puppet-common-transition-duration / 2) forwards;
