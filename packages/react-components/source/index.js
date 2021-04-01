@@ -1,76 +1,38 @@
-import 'core-js'; // TODO: Potentially remove polyfills from package, after triaging potential breaking changes
-import 'regenerator-runtime/runtime';
+//import 'core-js'; // TODO: Potentially remove polyfills from package, after triaging potential breaking changes
+//import 'regenerator-runtime/runtime';
 
-import ActionSelect from './react/library/action-select';
-import Alert from './react/library/alert';
-import Avatar from './react/library/avatar';
-import Badge from './react/library/badge';
-import Breadcrumb from './react/library/breadcrumb';
-import Button from './react/library/button';
-import ButtonSelect from './react/library/button-select';
-import Card from './react/library/card';
-import Checkbox from './react/library/checkbox';
-import Code from './react/library/code';
-import Copy from './react/library/copy';
-import ConfirmationModal from './react/library/confirmation-modal';
-import Content from './react/library/content';
-import Drawer from './react/library/drawer';
-import Filters from './react/library/filters';
-import Form from './react/library/form';
-import Heading from './react/library/heading';
-import Icon from './react/library/icon';
-import Input from './react/library/input';
-import Link from './react/library/link';
-import Loading from './react/library/loading';
-import Logo from './react/library/logo';
-import Modal from './react/library/modal';
-import Popover from './react/library/popover';
-import RadioButton from './react/library/radiobutton';
-import Select from './react/library/select';
-import Sidebar from './react/library/sidebar';
-import SidePanel from './react/library/sidepanel';
-import Switch from './react/library/switch';
-import Table from './react/library/table';
-import Tabs from './react/library/tabs';
-import Tag from './react/library/tag';
-import Text from './react/library/text';
-import Toolbar from './react/library/toolbar';
-import TooltipHoverArea from './react/library/tooltips/TooltipHoverArea';
-
-export {
-  ActionSelect,
-  Alert,
-  Avatar,
-  Badge,
-  Breadcrumb,
-  Button,
-  ButtonSelect,
-  Card,
-  Checkbox,
-  Code,
-  ConfirmationModal,
-  Content,
-  Copy,
-  Drawer,
-  Filters,
-  Form,
-  Heading,
-  Icon,
-  Input,
-  Link,
-  Loading,
-  Logo,
-  Modal,
-  Popover,
-  RadioButton,
-  Select,
-  Sidebar,
-  SidePanel,
-  Switch,
-  Table,
-  Tabs,
-  Tag,
-  Text,
-  Toolbar,
-  TooltipHoverArea,
-};
+export { default as ActionSelect } from './react/library/action-select';
+export { default as Alert } from './react/library/alert';
+export { default as Avatar } from './react/library/avatar';
+export { default as Badge } from './react/library/badge';
+export { default as Breadcrumb } from './react/library/breadcrumb';
+export { default as Button } from './react/library/button';
+export { default as ButtonSelect } from './react/library/button-select';
+export { default as Card } from './react/library/card';
+export { default as Checkbox } from './react/library/checkbox';
+export { default as Code } from './react/library/code';
+export { default as Copy } from './react/library/copy';
+export { default as ConfirmationModal } from './react/library/confirmation-modal';
+export { default as Content } from './react/library/content';
+export { default as Drawer } from './react/library/drawer';
+export { default as Filters } from './react/library/filters';
+export { default as Form } from './react/library/form';
+export { default as Heading } from './react/library/heading';
+export { default as Icon } from './react/library/icon';
+export { default as Input } from './react/library/input';
+export { default as Link } from './react/library/link';
+export { default as Loading } from './react/library/loading';
+export { default as Logo } from './react/library/logo';
+export { default as Modal } from './react/library/modal';
+export { default as Popover } from './react/library/popover';
+export { default as RadioButton } from './react/library/radiobutton';
+export { default as Select } from './react/library/select';
+export { default as Sidebar } from './react/library/sidebar';
+export { default as SidePanel } from './react/library/sidepanel';
+export { default as Switch } from './react/library/switch';
+export { default as Table } from './react/library/table';
+export { default as Tabs } from './react/library/tabs';
+export { default as Tag } from './react/library/tag';
+export { default as Text } from './react/library/text';
+export { default as Toolbar } from './react/library/toolbar';
+export { default as TooltipHoverArea } from './react/library/tooltips/TooltipHoverArea';
